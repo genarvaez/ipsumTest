@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My task App</title>
+</head>
+<body>
+	<section id="cardTask">
+		<ul>
+			<li *ngFor='let task of myTasks' class='myCards'>
+				{{task.id}}
+				<p>{{task.name}}</p>
+				<p>{{task.start_at}}</p>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>
